@@ -50,6 +50,7 @@ composer install
 
 # 3. Démarrez le serveur de développement (ou utilisez le serveur prod)
 symfony server:start
+```
 
 ### 🔒 Sécurité et Clés API
 AVERTISSEMENT MAJEUR : Ce dépôt contient les chemins vers des fichiers secrets et des configurations sensibles.
