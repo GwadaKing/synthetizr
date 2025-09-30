@@ -1,0 +1,43 @@
+### Composer ###
+/vendor/
+/composer.lock
+
+### Symfony ###
+# Cache, logs, sessions, etc.
+/var/
+/public/bundles/
+
+### Environnement et Secrets ###
+# Fichiers d'environnement locaux (contiennent les vrais secrets)
+.env.local
+.env.local.php
+.env.local.lock
+.env.dev
+.env.test
+.env.prod.local # Crucial à ignorer si vous utilisez un override prod local
+
+# Fichiers d'environnement généraux (ne contiennent pas les secrets)
+# Si vous stockez les clés en dur dans .env, changez la règle !
+# Mais le standard est de garder .env mais d'ignorer les .env.local
+
+# Fichiers de configuration spécifiques au développeur (facultatif mais recommandé)
+.php_cs.cache
+.idea/
+.vscode/
+
+### PHP-related ###
+*.bak
+*.swp
+*.orig
+.phpunit.result.cache
+/tests/codeception/
+
+### OS Files ###
+.DS_Store
+Thumbs.db
+
+### Secrets ###
+/config/secrets/*
+
+### Symfony (Sécurité Fichiers Secrets) ###
+/config/jwt/*

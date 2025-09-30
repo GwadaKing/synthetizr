@@ -1,0 +1,20 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # --- RÈGLE N°1 : L'EXCEPTION POUR SVELTE (à traiter en premier) ---
+    # Si la requête NE COMMENCE PAS par /api/
+    RewriteCond %{REQUEST_URI} !^/api/
+    # ET si la requête N'EST PAS pour un fichier qui existe réellement (une image, un css, etc.)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    # ALORS, on sert la page d'accueil de Svelte et on arrête tout.
+    RewriteRule ^.*$ /index.html [L]
+
+
+    # --- RÈGLE N°2 : LE CAS GÉNÉRAL POUR SYMFONY ---
+    # Si on arrive ici, c'est que la requête était soit pour /api/, soit pour un fichier existant.
+    # Cette règle standard de Symfony attrape tout ce qui n'est pas un fichier
+    # (donc nos appels /api/) et l'envoie vers le contrôleur frontal de Symfony.
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ %{ENV:BASE}/index.php [L]
+
+</IfModule>

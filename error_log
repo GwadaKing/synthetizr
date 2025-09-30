@@ -1,0 +1,12 @@
+[25-Sep-2025 02:38:11 UTC] [critical] Error thrown while running command "doctrine:query:sql 'SHOW TABLES;'". Message: "An exception occurred in the driver: SQLSTATE[HY000] [1045] Access denied for user 'u484144206_synthetizr'@'::1' (using password: YES)"
+[25-Sep-2025 02:41:13 UTC] 2025-09-25T02:41:13+00:00 [critical] Uncaught Error: Class "Symfony\Bundle\MakerBundle\MakerBundle" not found
+[25-Sep-2025 02:45:18 UTC] 2025-09-25T02:45:18+00:00 [critical] Uncaught Error: Class "Symfony\Bundle\MakerBundle\MakerBundle" not found
+[25-Sep-2025 02:45:44 UTC] [critical] Error thrown while running command "doctrine:query:sql 'SHOW TABLES;' --env=prod". Message: "An exception occurred in the driver: SQLSTATE[HY000] [1045] Access denied for user 'u484144206_synthetizr'@'::1' (using password: YES)"
+[25-Sep-2025 02:55:28 UTC] 2025-09-25T02:55:28+00:00 [critical] Uncaught Error: Class "Symfony\Bundle\MakerBundle\MakerBundle" not found
+[25-Sep-2025 03:20:26 UTC] 2025-09-25T03:20:26+00:00 [critical] Uncaught Error: Class "Symfony\Bundle\MakerBundle\MakerBundle" not found
+[25-Sep-2025 03:21:28 UTC] 2025-09-25T03:21:28+00:00 [critical] Uncaught Error: Class "Symfony\Bundle\MakerBundle\MakerBundle" not found
+[25-Sep-2025 18:35:50 UTC] 2025-09-25T18:35:50+00:00 [critical] Uncaught Error: syntax error, unexpected token "public"
+[25-Sep-2025 21:02:56 UTC] 2025-09-25T21:02:56+00:00 [critical] Uncaught Error: Class "Symfony\Bundle\MakerBundle\MakerBundle" not found
+[26-Sep-2025 05:06:52 UTC] [critical] Error thrown while running command "doctrine:migrations:diff". Message: "The metadata storage is not up to date, please run the sync-metadata-storage command to fix this issue."
+[26-Sep-2025 05:10:13 UTC] [critical] Error thrown while running command "doctrine:migrations:diff". Message: "The metadata storage is not up to date, please run the sync-metadata-storage command to fix this issue."
+[26-Sep-2025 05:10:24 UTC] [critical] Error thrown while running command "doctrine:migrations:diff". Message: "The metadata storage is not up to date, please run the sync-metadata-storage command to fix this issue."
